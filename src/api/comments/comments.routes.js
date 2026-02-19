@@ -1,6 +1,12 @@
 const { isAuth, isAdmin } = require("../../middlewares/auth");
 const { verifyCreateCommentFields } = require("../../middlewares/fields");
-const { createComment, deleteComment, getAllComments, getCommentById, getAllCommentsByStation } = require("./comments.controller");
+const {
+    createComment,
+    deleteComment,
+    getAllComments,
+    getCommentById,
+    getAllCommentsByStation,
+} = require("./comments.controller");
 
 const commentsRoutes = require("express").Router();
 
