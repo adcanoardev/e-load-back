@@ -1,6 +1,13 @@
 const { isAdmin } = require("../../middlewares/auth");
 const { verifyCreateStationFields, verifyUpdateStationFields } = require("../../middlewares/fields");
-const { createStation, updateStation, deleteStation, getAllStations, getStationById, getAllStationsAdmin } = require("./stations.controller");
+const {
+    createStation,
+    updateStation,
+    deleteStation,
+    getAllStations,
+    getStationById,
+    getAllStationsAdmin,
+} = require("./stations.controller");
 // const { createStation, updateStation, deleteStation, getAllStations, getStationById, getAllStationsAdmin, getAddressStationById } = require("./stations.controller");
 
 const stationsRoutes = require("express").Router();
